@@ -1,0 +1,12 @@
+- hosts: all
+  vars:
+    message: command completed
+
+  tasks:
+  - name: message
+    debug:
+      msg: Test started...
+
+  roles:
+    - ping_server
+    - list_files

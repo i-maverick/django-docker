@@ -1,0 +1,3 @@
+- import_playbook: test.yml
+- import_playbook: stage.yml
+- import_playbook: release.yml

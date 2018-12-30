@@ -1,0 +1,5 @@
+- shell: ls -la
+  register: output
+  notify: command completed
+
+- debug: var=output.stdout_lines
